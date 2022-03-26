@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/9f62b55419.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>PhotoFeed</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav id="navbar-example2" class="navbar navbar-light bg-light border px-3">
+        <div class="container">
+            <a class="navbar-brand " href="#"><i class="fa-brands fa-instagram"></i>Instagram</a>
+            <ul class="nav nav-pills">
+                <form class="d-flex">
+                    <!-- modal -->
+                    <button class="btn btn-success" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Create a new post</button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <textarea id="modalmsj"></textarea>
+                                    <i class="fas fa-camera border p-1 rounded"></i>
+                                    <i class="fas fa-map-marker-alt border p-1 rounded"></i>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-success">Publish</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- fin modal -->
+                </form>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle " data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><i class="fa-solid fa-gear"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#scrollspyHeading3">Action</a></li>
+                        <li><a class="dropdown-item" href="#scrollspyHeading4">Another action</a></li>
+                        <li><a class="dropdown-item" href="#scrollspyHeading5">Something else here</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#scrollspyHeading5">Log out</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- navbar fin -->
+    <!-- Navbar cambiable -->
+    <ul class="nav nav-pills justify-content-center " id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link bg-white active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fa-solid fa-grip"></i></button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link bg-white" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fa-solid fa-square"></i></button>
+        </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div class="container-fluid mt-1">
+                <div class="row">
+                    <div class="col px-0 mx-0">
+                        <img src="https://img.freepik.com/free-photo/little-young-dog-posing-cheerful_155003-28765.jpg" class="sizeimg">
+                    </div>
+                    <div class="col px-0 mx-0">
+                        <img src="https://img.freepik.com/free-photo/beautiful-pattern-with-fresh-watermelon-slices-yellow-bright-background-top-view_1220-1407.jpg" class="sizeimg">
+                    </div>
+                    <div class="col px-0 ">
+                        <img src="https://img.freepik.com/free-photo/front-view-funny-cute-dog-concept_23-2148786514.jpg" class="sizeimg">
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid mt-1">
+                <div class="row">
+                    <div class="col px-0 mx-0">
+                        <img src="https://img.freepik.com/free-photo/front-view-fresh-watermelon-sweet-sliced-yellow-fruit-summer-color_140725-24782.jpg" class="sizeimg">
+                    </div>
+                    <div class="col px-0 mx-0">
+                        <img src="https://img.freepik.com/free-photo/lovely-pet-portrait-isolated_23-2149192349.jpg" class="sizeimg">
+                    </div>
+                    <div class="col px-0 mx-0">
+                        <img src="https://img.freepik.com/free-photo/watermelon-smoothie_1339-453.jpg" class="sizeimg">
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid mt-1">
+                <div class="row">
+                    <div class="col px-0 mx-0">
+                        <img src="https://img.freepik.com/free-photo/cute-little-dog-impersonating-business-person_23-2148985938.jpg" class="sizeimg">
+                    </div>
+                    <div class="col px-0 mx-0">
+                        <img src="https://img.freepik.com/free-photo/front-view-beautiful-dog-with-copy-space_23-2148786499.jpg" class="sizeimg">
+                    </div>
+                    <div class="col px-0 mx-0">
+                        <img src="https://c.tenor.com/o3oQXq9guVAAAAAS/maya-dog.gif" class="sizeimg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade bg-light" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <!-- cartas verticales -->
+            <div class="container bg-light">
+                <div class="card">
+                    <div class="card-title justify-content-between">
+                        <h5> My first photo</h5>
+                        <h5 class="text-muted">12/14</h5>
+                    </div>
+                    <div class="card-body px-1">
+                        <img src="https://img.freepik.com/free-photo/little-young-dog-posing-cheerful_155003-28765.jpg">
+                        <h5 class="px-2 text-muted"> 23 likes</h5>
+                        <h6 class="px-2 card-text">This is my first photo of the feed. This is my multi line comment for texting purposes. I am learning to code with #BreatheCode</p>
+                            <div class="card-subtitle">
+                                <button type="button" class="btn btn-light"><i class="fa-solid fa-heart"></i></button>
+                                <h5 class="text-muted py-1">Comment</h5>
+                            </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-title justify-content-between">
+                        <h5> My first photo</h5>
+                        <h5 class="text-muted">12/14</h5>
+                    </div>
+                    <div class="card-body px-1">
+                        <img src="https://img.freepik.com/free-photo/beautiful-pattern-with-fresh-watermelon-slices-yellow-bright-background-top-view_1220-1407.jpg">
+                        <h5 class="px-2 text-muted"> 23 likes</h5>
+                        <h6 class="px-2 card-text">This is my first photo of the feed. This is my multi line comment for texting purposes. I am learning to code with #BreatheCode</p>
+                            <div class="card-subtitle">
+                                <button type="button" class="btn btn-light"><i class="fa-solid fa-heart"></i></button>
+                                <h5 class="text-muted py-1">Comment</h5>
+                            </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-title justify-content-between">
+                        <h5> My first photo</h5>
+                        <h5 class="text-muted">12/14</h5>
+                    </div>
+                    <div class="card-body px-1">
+                        <img src="https://img.freepik.com/free-photo/front-view-funny-cute-dog-concept_23-2148786514.jpg">
+                        <h5 class="px-2 text-muted"> 23 likes</h5>
+                        <h6 class="px-2 card-text">This is my first photo of the feed. This is my multi line comment for texting purposes. I am learning to code with #BreatheCode</p>
+                            <div class="card-subtitle">
+                                <button type="button" class="btn btn-light"><i class="fa-solid fa-heart"></i></button>
+                                <h5 class="text-muted py-1">Comment</h5>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <!-- fin cartas verticales -->
+        </div>
+    </div>
+    <!-- navbar cambiable fin -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+</html>

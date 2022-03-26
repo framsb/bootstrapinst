@@ -1,0 +1,45 @@
+.navbar-brand {
+    font-family: 'Oleo Script', cursive;
+    font-size: 12px;
+    color: #808080;
+}
+
+.sizeimg {
+    width: 449px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card {
+    width: 550px;
+    height: 500px;
+    margin: 0px auto 30px auto;
+}
+
+.card-title {
+    padding: 15px;
+    display: flex;
+}
+
+.card-body img {
+    width: 540px;
+    height: 270px;
+    object-fit: cover;
+}
+
+.card-subtitle {
+    display: flex;
+}
+
+.nav-link {
+    color: #808080 !important;
+}
+
+.nav-link:hover {
+    background-color: #808080 !important;
+    color: white !important;
+}
+
+#modalmsj {
+    width: 460px;
+}
