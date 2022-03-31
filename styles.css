@@ -43,3 +43,8 @@
 #modalmsj {
     width: 460px;
 }
+
+.comment {
+    color: grey;
+    width: 45px;
+}
